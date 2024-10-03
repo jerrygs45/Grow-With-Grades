@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --main-bg-color: #003153;
+}
+
+main section .container .bgimg {
+    background-color: red;
+    height: 120vh;
+}
+
+main section .container .bgimg {
+    background-size: cover;
+    background-image: url(bgimg.jpg);
+    background-repeat: no-repeat;
+}
+
+.container .textSlid {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container .textSlid mARquee {
+    width: 50vw;
+}
+
+.container .textSlid mARquee font {
+    font-size: 20;
+    text-shadow: 0px 0px 5px;
+    color: red;
+}
+
+
+.container .logo {
+    display: flex;
+    align-items: center;
+    padding: 65px 0 0 0;
+}
+
+
+.container .bgimg .logo {
+    display: flex;
+    align-items: center;
+    margin: 60px 0px 0px 65px;
+}
+
+.container .bgimg .logo img {
+    width: 70px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .bgimg .logo h3 {
+    margin: 0px 0px 0px 20px;
+    font-size: 40px;
+}
+
+.container .logo h3 b a {
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+
+.container .bgimg .logo h3:hover {
+    text-shadow: 0px 0px 5px;
+}
+
+.container .bgimg .teach {
+    position: relative;
+    top: 250px;
+    left: 70px;
+    text-shadow: 0px 0px 5px;
+    font-size: 80px;
+    font: bold;
+    font-family: 900;
+    /* background-color: green; */
+    width: 700px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
