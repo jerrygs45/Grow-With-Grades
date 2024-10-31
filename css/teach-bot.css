@@ -1,0 +1,131 @@
+:root {
+    --main-bg-color: #003153;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .wel {
+    font-size: 26px;
+    color: black;
+}
+
+main .container {
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px 0 0px 0;
+}
+
+main .container .left {
+    /* background-color: yellow; */
+    margin: 30px 5px;
+    background-size: cover;
+    background-image: url(teach-bot.jpg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 600px;
+    height: 72vh;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+main .container .right {
+    background-color: silver;
+    border: 2px silver solid;
+    box-shadow: 0px 0px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 30px 0;
+    width: 630px;
+    height: 72vh;
+}
+
+main .container .right .heading {
+    margin: 5px 0px 5px 36px;
+    /* background-color: yellow; */
+    text-align: center;
+    width: 90%;
+    height: 10%;
+}
+
+main .container .right .chat {
+    border: 2px black solid;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0px 5px 36px;
+    padding: 10px;
+    background-color: gray;
+    overflow: hidden;
+    color: black;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    width: 88%;
+    height: 50%;
+    scrollbar-width: auto;
+    font-size: 20px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#chat-ans{
+    display: inline;
+    border-radius: 10px;
+    /* background-color: red; */
+}
+
+main .container .right .sms {
+    margin: 5px 0px 5px 50px;
+    width: 85%;
+    height: 20%;
+}
+
+main .container .right input {
+    font-weight: 900;
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    border: 2px black solid;
+    border-radius: 7px;
+}
+
+main .container .right .send {
+    /* background-color: green; */
+    margin: 0px 0px 5px 67px;
+    width: 78%;
+}
+
+main .container .right .send button:hover{
+    box-shadow: 0 10px 20px;
+    border-radius: 10px;
+}
+
+main .container .right .send:active{
+    transform: translateY(4px);
+}
+
+main .container .right button {
+    border: 2px gray solid;
+    border-radius: 7px;
+    background-color: var(--main-bg-color);
+    color: white;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+}
+

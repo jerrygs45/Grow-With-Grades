@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container .slides{
+    width: 80%;
+    height: 300px;
+    margin: 30px auto;
+    border: 2px red solid;
+    border-radius: 10px;
+    background-color: yellow;
+}

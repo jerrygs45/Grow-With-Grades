@@ -1,0 +1,31 @@
+.all-container .box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.system{
+    width: 700px;
+    font-size: 18px;
+    /* background-color: yellow; */
+}
+
+.system img{
+    border: none;
+    border-radius: 20px;
+    margin: 50px 0 0 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.features{
+    width: 700px;
+    font-size: 18px;
+    /* background-color: red; */
+}
+
+.features ol li{
+    margin: 20px;
+}
