@@ -35,17 +35,21 @@ header .head span {
     font-weight: 900;
 }
 
-#finished,#yourScore {
+#finished,
+#yourScore {
     display: none;
 }
 
-footer {
+.footer-down{
     position: absolute;
     bottom: 0%;
-    align-content: center;
-    height: 60px;
     width: 100%;
-    ;
+}
+
+footer {
+    align-content: center;
+    height: 90px;
+    width: 100%;
     background-color: var(--main-bg-color);
 }
 
@@ -56,105 +60,79 @@ footer .copy {
     color: white;
 }
 
+
+.top{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.persentage{
+    background-color: #fff;
+    width: 50%;
+    height: 10px;
+    border: 2px black solid;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.occer{
+    border-radius: 5px;
+    background-color: green;
+    width: 50%;
+    height: 100%;
+}
+
+.attempted-que{
+    margin: 5px;
+    width: auto;
+    height: 50px;
+    background-color: yellow;
+    border: 1px black solid;
+    border-radius: 7px;
+    align-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.time{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    font-size: 30px;
+    width: 100px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 7px;
+}
+
+
 main section .container {
     display: flex;
 }
 
-main section .container .left {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 20vw;
-    height: 77vh;
-    background-color: white;
-    border: 1px black solid;
-}
-
-main section .container .left .time {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: bisque;
-    width: 90%;
-    height: 50px;
-    border: 1px silver solid;
-    border-radius: 10px;
-    margin: 0 0 20px 0;
-    cursor: pointer;
-    font-size: 40px;
-}
-
-main section .container .left .persentage {
-    width: 90%;
-    height: 15px;
-    background-color: silver;
-    border-radius: 10px;
-    margin: 0 0 20px 0;
-    cursor: pointer;
-}
-
-main section .container .left .persentage .full {
-    width: 50%;
-    height: 100%;
-    background-color: green;
-    border-radius: 10px;
-}
-
-main section .container .left .counting {
-    width: 90%;
-    height: 350px;
-    background-color: bisque;
-    border: 1px silver solid;
-    border-radius: 10px;
-    display: grid;
-    justify-content: space-around;
-    /* grid-row-gap: 3px;
-    grid-column-gap: 3px; */
-    grid-template-columns: 10% 10% 10% 10% 10%;
-    grid-template-rows: auto auto auto auto auto;
-}
-
-main section .container .left .counting .circle {
-    cursor: pointer;
-    display: inline;
-    border: 0.5px gray solid;
-    border-radius: 100%;
-    margin: 5px;
-    background-color: lightgreen;
-    height: 70%;
-    width: 90%;
-}
-
-.circle:active {
-    /* transform: translateY(2px); */
-    transform: scale(1.1);
-}
-
 main section .container .right {
-    width: 80vw;
-    /* background-color: red; */
-    border-radius: 2px;
-
+    padding: 10px;
+    width: 100%;
 }
 
 main section .container .right .ques-box {
-    /* background-color: yellow; */
-    padding: 1%;
-    width: 98%;
-    height: 58vh;
+    padding: 5px;
+    height: 47vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.que{
+.que {
     margin: 10px auto;
     width: 90%;
-    
 }
 
-.que ol li{
+.que ol li {
     margin-top: 20px;
     padding: 10px;
     width: 70%;
@@ -164,38 +142,34 @@ main section .container .right .ques-box {
     align-content: center;
 }
 
-label{
+label {
     cursor: pointer;
 }
 
-li input{
+li input {
     width: 15px;
     height: 15px;
     cursor: pointer;
-    margin-right:7px ;
+    margin-right: 7px;
     border: 5px black red;
 }
 
-
-main section .container .right .down {
-    position: absolute;
-    bottom: 5%;
-    width: 78.7vw;
-    height: 20vh;
-    background-color: white;
+.down {
+    background-color: gray;
+    width: 100%;
+    height: 50px;
     align-content: center;
     border-radius: 2px;
 }
 
-main section .container .right .down .buttons {
-    /* background-color: green; */
+.down .buttons {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-content: center;
 }
 
-main section .container .right .down .buttons button {
+.down .buttons button {
     width: 110px;
     height: 40px;
     font-size: 18px;
@@ -209,7 +183,7 @@ main section .container .right .down .buttons button {
     outline: none;
 }
 
-main section .container .right .down .buttons button:hover {
+.down .buttons button:hover {
     box-shadow: 0 10px 20px;
     border: none;
 }
@@ -226,8 +200,7 @@ main section .container .right .down .buttons button:hover {
     transform: translateX(8px);
 }
 
-
-.result{
+.result {
     width: 60%;
     height: 400px;
     margin: 50px auto;
@@ -240,7 +213,7 @@ main section .container .right .down .buttons button:hover {
     color: white;
 }
 
-.result button{
+.result button {
     width: 110px;
     height: 40px;
     font-size: 18px;

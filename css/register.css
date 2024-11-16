@@ -74,7 +74,7 @@
 .pass,
 .phone {
     padding: 5px;
-    width: 300px;
+    width: 90%;
     height: 30px;
     border: 1px silver solid;
     border-radius: 5px;
@@ -82,7 +82,7 @@
 
 .form form table tr td .email {
     padding: 5px;
-    width: 650px;
+    width: 95%;
     height: 30px;
     border: 1px silver solid;
     border-radius: 10px;
@@ -118,13 +118,13 @@ input {
 }
 
 .D-btn {
-    width: 200px;
+    width: 100%;
     border-radius: 50px;
     outline: none;
 }
 
 .btn {
-    width: 200px;
+    width: 100%;
     height: 35px;
     color: white;
     background-color: var(--main-bg-color);

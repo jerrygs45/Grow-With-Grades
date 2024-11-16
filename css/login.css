@@ -10,19 +10,15 @@
 }
 
 .container {
-    /* background-color: green; */
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
 }
 
 .container .form {
-    position: relative;
-    top: 50px;
-    /* background-color: red; */
+    margin: 10px auto;
+    width: 100%;
     text-align: center;
-    /* height: 500px; */
 }
 
 .container .form b {
@@ -35,9 +31,7 @@
 }
 
 .container .form .logo {
-    /* background-color: #fff; */
     text-align: center;
-    /* height: 200px; */
 }
 
 .container .form .logo img {
@@ -46,8 +40,10 @@
 }
 
 .container .form form {
-    position: relative;
-    top: 50px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
 }
 
 .container .form form table td {
@@ -69,12 +65,12 @@
 
 .container .form form p {
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .form form table tr td input {
     padding: 5px 0 5px 5px;
-    width: 300px;
+    width: 30vw;
     height: 30px;
     border: 1px silver solid;
     outline: none;
@@ -82,7 +78,7 @@
 }
 
 .btn {
-    width: 440px;
+    width: 95%;
     height: 35px;
     color: white;
     background-color: var(--main-bg-color);

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: yellow;
+            width: 100%;
+            height: 90vh;
+        }
+
+        button {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            border: none;
+            border-radius: 100%;
+            font-size: 40px;
+            padding: 1px 5px 1px 5px;
+            background-color: silver;
+            cursor: pointer;
+        }
+
+        #prev {
+            top: 50%;
+        }
+
+        #next {
+            top: 50%;
+            left: 97%;
+        }
+
+        img {
+            height: 100%;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="img-con" class="container">
+        <button onclick="preImg()" id="prev">
+            < </button>
+                <div class="img">
+                    <img id="img1" src="img/map.png" alt="">
+                    <img id="img2" src="img/profile.png" alt="">
+                    <img id="img3" src="img/logo.png" alt="">
+                </div>
+                <button onclick="nextImg()" id="next"> > </button>
+    </div>
+    <script type="text/javascript">
+        let img1 = document.getElementById("img1");
+        let img2 = document.getElementById("img2");
+        let img3 = document.getElementById("img3");
+        img2.classList.add("hide");
+        img3.classList.add("hide");
+        let img = img1;
+
+        function nextImg() {
+            if (img == img1) {
+                img1.classList.add("hide");
+                img1.classList.remove("show");
+                img2.classList.remove("hide");
+                img2.classList.add("show");
+                img3.classList.add("hide");
+                img3.classList.remove("show");
+                img = img2;
+            }
+            else if (img == img2) {
+                img1.classList.add("hide");
+                img1.classList.remove("show");
+                img2.classList.add("hide");
+                img2.classList.remove("show");
+                img3.classList.remove("hide");
+                img3.classList.add("show");
+                img = img3;
+            }
+            else if (img == img3) {
+                img1.classList.remove("hide");
+                img1.classList.add("show");
+                img2.classList.add("hide");
+                img2.classList.remove("show");
+                img3.classList.add("hide");
+                img3.classList.remove("show");
+                img = img1;
+            }
+        }
+
+        function preImg() {
+            if (img == img3) {
+                img1.classList.add("hide");
+                img1.classList.remove("show");
+                img2.classList.remove("hide");
+                img2.classList.add("show");
+                img3.classList.add("hide");
+                img3.classList.remove("show");
+                img = img2;
+            }
+            else if (img == img2) {
+                img1.classList.add("hide");
+                img1.classList.remove("show");
+                img2.classList.add("hide");
+                img2.classList.remove("show");
+                img3.classList.remove("hide");
+                img3.classList.add("show");
+                img = img1;
+            }
+            else if (img == img1) {
+                img1.classList.remove("hide");
+                img1.classList.add("show");
+                img2.classList.add("hide");
+                img2.classList.remove("show");
+                img3.classList.add("hide");
+                img3.classList.remove("show");
+                img = img3;
+            }
+        }
+    </script>
+</body>
+
+</html>

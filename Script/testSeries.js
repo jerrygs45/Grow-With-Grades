@@ -41,7 +41,7 @@ let quesData = [
             "1 2 1 3",
             "1 2 1 3 1 4",
             "1 1 2",],
-        correct: 0,
+        currect: 0,
     },
 ]
 
@@ -61,7 +61,8 @@ const scoreboard = () => {
 
 
 
-let min = quesData.length;
+// let min = (quesData.length);
+let min = 2;
 let sec = 0;
 let t = setInterval(() => {
     sec--;
@@ -78,7 +79,7 @@ let t = setInterval(() => {
         }
         else {
             min--;
-            sec = 60;
+            sec = 59;
         }
     }
     document.getElementById('show-min').innerHTML = min;
@@ -131,13 +132,16 @@ submitBtn.addEventListener('click', () => {
     let x;
     const selectedOptionIndex = getSelectedOption();
     console.log(selectedOptionIndex);
-    if (selectedOptionIndex == quesData[currentQuiz].currect)
+    if (selectedOptionIndex === quesData[currentQuiz].currect) {
         score++;
+        console.log(score);
+    }
     if (currentQuiz < (quesData.length - 1))
         currentQuiz++;
     else
         x = confirm("Do you want to final submit");
     if (x == true) {
+        clearTimeout(t);
         scoreboard();
     }
     deSelected();

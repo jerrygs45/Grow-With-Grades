@@ -6,18 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/icon.png">
     <title>Grow With Grades - Teach-Bot</title>
-    <link rel="stylesheet" href="css/utill.css">
-    <style type="text/css">
-    </style>
+    <link rel="stylesheet" href="css/home.css">
 </head>
+<body>
+    
+    <header>
+        
+        <button id="menu-btn"><img src="img/menu-btn.png" alt="Menu"></button>
+        
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <h2>Grow With Grades</h2>
+        </div>
+        <div class="profile">
+            <span>Hi </span>
+            <a href="profile.html" target="frame"><img src="img/profile.png" alt="profile"></a>
+        </div>
+</header>
+<section>
 
-<frameset cols="13%,75%">
-    <frame src="leftMenu.html" id="left" name="leftframe" noresize scrolling="NO">
-        <frameset rows="20%,85%">
-            <frame src="topheader.html" name="hearderframe" noresize scrolling="NO">
-                <frame src="right.html" name="rightframe" noresize scrolling="auto">
-        </frameset>
-</frameset>
+    <menu id="menu-bar">
+        <ul>
+            <li><img src="img/logo.png" alt="Logo"></li>
+            <li><a href="Home.html" class="page">HOME</a></li>
+            <li><a href="teach-bot.html" class="page" target="frame">Teach-Bot</a></li>
+            <li><a href="testSeries.html" class="page" target="_main">Test-Series</a></li>
+            <li><a href="study-material.html" target="frame" class="page">Study-Materials</a></li>
+            <li><a href="our-result.html" target="frame" class="page">Our-Result</a></li>
+            <!-- <li><a href="contact.html" class="page" target="_main">Contact</a></li> -->
+        </ul>
+    </menu>
+    
+    <main>
+        <div class="frame">
+            <iframe src="home-page.html" frameborder="0" name="frame"></iframe>
+        </div>
+    </main>
+    
+</section>
 
-
+<script src="Script/home.js"></script>
+</body>
 </html>

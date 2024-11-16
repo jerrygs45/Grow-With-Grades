@@ -20,6 +20,7 @@
 }
 
 .all-container .map-details {
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -27,7 +28,6 @@
 
 .all-container .map-details .map {
     border-radius: 10px;
-    margin: 50px 0 30px 50px;
     width: 650px;
 }
 
@@ -43,7 +43,6 @@
 
 .all-container .map-details .map{
     text-align: center;
-    /* background-color: red; */
 }
 
 .all-container .map-details .map .abesit{
@@ -114,22 +113,26 @@
 .form form table tr td .name,
 .pass,
 .phone {
+    outline: none;
     padding: 5px;
-    width: 300px;
+    width: 85%;
     height: 30px;
     border: 2px silver solid;
     border-radius: 5px;
 }
 
 .form form table tr td .email {
+    outline: none;
     padding: 5px;
-    width: 650px;
+    width: 95%;
     height: 30px;
     border: 2px silver solid;
     border-radius: 10px;
 }
 
 .form form table tr td #msg {
+    outline: none;
+    width: 95%;
     border-radius: 10px;
     padding: 10px;
 }
