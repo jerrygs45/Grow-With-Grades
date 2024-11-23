@@ -22,9 +22,8 @@ header .wel {
 }
 
 main .container {
-    /* background-color: red; */
     width: 100%;
-    min-height: 100vh;
+    min-height: 86vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -34,7 +33,7 @@ main .container {
 }
 
 main .container .left {
-    /* background-color: yellow; */
+    background-color: yellow;
     margin: 30px 5px;
     background-size: cover;
     background-image: url(teach-bot.jpg);
@@ -47,8 +46,8 @@ main .container .left {
 }
 
 main .container .right {
-    background-color: silver;
-    border: 2px silver solid;
+    /* background-color: silver; */
+    border: 1px black solid;
     box-shadow: 0px 0px 20px;
     border-radius: 20px;
     display: inline-block;
@@ -66,20 +65,26 @@ main .container .right .heading {
 
 main .container .right .chat {
     border: 2px black solid;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
     margin: 2px auto;
     padding: 10px;
-    background-color: gray;
+    background-color: silver;
     overflow: hidden;
-    color: black;
     font-weight: 900;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
     width: 85%;
     height: 50%;
     scrollbar-width: auto;
-    font-size: 20px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    color: red;
+    text-align: right;
+    scrollbar-width: none;
+}
+
+main .container .right .chat p {
+    color: black;
+    text-align: left;
 }
 
 #chat-ans {
@@ -89,20 +94,21 @@ main .container .right .chat {
 }
 
 main .container .right .sms {
+    /* background-color: red; */
     margin: 20px auto;
     width: 88%;
-    height: 16%;
+    height: 13%;
 }
 
-main .container .right textarea {
+main .container .right input {
     outline: none;
     margin: 1px auto;
     font-weight: 900;
-    padding: 10px;
+    padding: 5px 0 5px 5px;
     width: 96%;
-    height: 60px;
+    height: 30px;
     border: 1px black solid;
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 main .container .right .send {

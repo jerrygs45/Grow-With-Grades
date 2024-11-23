@@ -80,7 +80,7 @@ footer .copy {
 .occer{
     border-radius: 5px;
     background-color: green;
-    width: 50%;
+    width: 0%;
     height: 100%;
 }
 
@@ -201,7 +201,7 @@ li input {
 }
 
 .result {
-    width: 60%;
+    width: 80%;
     height: 400px;
     margin: 50px auto;
     padding-top: 50px;

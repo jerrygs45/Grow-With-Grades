@@ -98,10 +98,12 @@ let [option_1, option_2, option_3, option_4] = document.querySelectorAll("#optio
 let submitBtn = document.getElementById("sub");
 let preBtn = document.getElementById("prev");
 let NextBtn = document.getElementById("next");
+let precentage = document.getElementById("occurance");
+let precentageDigit = document.getElementById("precentage-in-digit");
 
 
 let currentQuiz = 0;
-
+let occurance = 0;
 
 const loadQuiz = () => {
     const { questions, options } = quesData[currentQuiz];
@@ -136,9 +138,16 @@ submitBtn.addEventListener('click', () => {
         score++;
         console.log(score);
     }
+
+    if (selectedOptionIndex != null) {
+        occurance++;
+        precentage.style.width = `${(occurance / (quesData.length)) * 100}%`;
+        precentageDigit.innerText = `${(occurance / (quesData.length)) * 100}%`;
+    }
+
     if (currentQuiz < (quesData.length - 1))
         currentQuiz++;
-    else
+    else    if (currentQuiz == (quesData.length - 1))
         x = confirm("Do you want to final submit");
     if (x == true) {
         clearTimeout(t);

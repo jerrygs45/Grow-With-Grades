@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow With Grades/Teach-Bot - Teach-Bot</title>
+    <title>Teach-Bot - Teach-Bot</title>
     <link rel="icon" type="image/png" href="img/icon.png">
     <link rel="stylesheet" type="text/css" href="css/teach-bot.css">
 </head>
@@ -25,10 +25,12 @@
                 <div class="chat" id="chat-box">
                     <p id="chat-ans"></p>
                 </div>
+                <form action="" onsubmit="return ques()">
                 <div class="sms">
-                    <textarea name="" id="chat-bot-qus" placeholder="Ask your doubt!"></textarea>
+                    <input type="question" id="chat-bot-qus" placeholder="Ask your doubt!" autofocus></input>
                 </div>
-                <div class="send"><button onclick="ques()">Send</button></div>
+                <div class="send"><button id="send-btn" >Send</button></div>
+                </form>
             </div>
         </div>
     </main>
